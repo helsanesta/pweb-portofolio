@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eff4fd;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.topnav .icon {
+    display: none;
+  }
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+   text-decoration: none;
+   color: #000;
+   font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(27, 81, 81);
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.detail {
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.detail h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #212121;
+}
+
+span {
+    color: rgb(27, 81, 81);
+}
+
+.detail p{
+    line-height: 22px;
+    color: #555;
+}
+
+.detail a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.detail a:hover{
+    background: rgb(27, 81, 81);
+    /* transform: translateY(-10%);
+    transition: top 1s, right 1s; */
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+
+.images:hover .boy{
+    left: 55%;
+} 
+
+.container{
+    position: relative;
+    max-width: 92rem;
+    z-index: 5;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.section{
+    padding: 7rem 0;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background: #eff4fd;
+}
+
+.section-header{
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.title{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+    line-height: 1;
+    font-size: 2.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.title:before{
+    content: attr(data-title);
+    display: block;
+    margin-bottom: .4rem;
+    color: rgb(27, 81, 81);
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.title:after{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: rgb(27, 81, 81);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.title-sm{
+    color: #333;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.text{
+    font-size: 1rem;
+    color: #7a7a7a;
+    line-height: 1.6;
+}
+
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card-wrap{
+   margin: 0.8rem 0.8rem; 
+}
+
+.card{
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    min-height: 400px;
+    background-color:  #f6f7fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    bottom: 0;;
+    left: 0;
+    right: 0;
+    background-color: rgb(27, 81, 81);
+    transition: 0.3s;
+}
+
+.card-wrap:hover .card{
+    transform: translateY(-15px);
+}
+
+.card-wrap:hover .card:after{
+    height: 8px;
+}
+
+.icon{
+    width: 90px;
+    margin-bottom: 1.7rem;
+}
+
+.card .title-sm{
+    line-height: 0.8;
+}
+
+.card .text{
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+/* education */
+.edu{
+    column-gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.edu-wrap{
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 4pt;
+    border-radius: 20px;
+    padding: 1rem 1rem;
+    border-color: #333;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+ }
+
+.education{
+    position: relative;
+    background-color: #eff4fd;
+    min-height: 600px;
+}
+
+.background-bg{
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    background-color: rgb(27, 81, 81);
+}
+
+.education .title:before{
+    color: #f9fafb;
+    padding-top: 1rem;
+}
+
+.education .title{
+    color: #fff;
+}
+
+.education .title:after{
+    background-color: #333;
+}
+
+.edu-content .text{
+    color: #f9fafb;
+    font-style: italic;
+}
+
+.edu-content .title-sm{
+    color: #fff;
+}
+
+/* end education */
+
+.exp{
+    column-gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1.5fr));
+}
+
+.exper{
+    column-gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1rem;
+    margin-bottom: 1.5rem;
+    transition: 0.3s;
+}
+
+.experience .title:before{
+    margin-top: 1.5rem;
+}
+
+.exp-wrap:hover .exper{
+    transform: translateY(10px);
+}
+
+.exp-content .title-sm{
+    color: #333;
+}
+
+.exp-content .text{
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    color: #7a7a7a;
+}
+
+/* footer */
+footer{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 81, 81);
+    position: relative;
+}
+
+footer .title{
+    color: #fff;
+}
+
+footer .title:before{
+    color: #f9fafb;
+}
+
+footer p{
+    font-family: "Poppins",sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+.social-media a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 81, 81);
+    margin: 20px 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-media{
+    display: flex;
+}
+
+.social-media a:hover{
+    transform: translateY(-20%);
+    background-color: #fff;
+}
+
+.update{
+    color: #f9fafb;
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+
+}
+
+/* end footer */
