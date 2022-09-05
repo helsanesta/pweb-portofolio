@@ -361,6 +361,7 @@ footer p{
     justify-content: center;
     align-items: center;
     background-color: rgb(27, 81, 81);
+    text-decoration: none;
     margin: 20px 10px;
     border-radius: 50%;
     transition: 0.3s;
